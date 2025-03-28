@@ -1,0 +1,7 @@
+<addresses>
+    <address name="poc-cola">
+        <anycast>
+            <queue name="poc-cola" durable="true"/>
+        </anycast>
+    </address>
+</addresses>
