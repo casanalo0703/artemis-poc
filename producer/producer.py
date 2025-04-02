@@ -30,7 +30,7 @@ conn.connect('admin', 'admin', wait=True)
 while True:
     try:
         conn.send(
-            body=f'Test message!! {lorem.paragraphs(random.randint(1,4))}',
+            body=f'Test message!! {random.randint(1,4)}',
             destination=f'{QUEUE_NAME}',
             headers={'persistent': 'true'},
         )
